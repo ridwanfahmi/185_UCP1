@@ -20,10 +20,14 @@ module.exports = (sequelize, DataTypes) => {
         jenis_hewan: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        tahun_lahir: {
+            type: DataTypes.STRING,
+            allowNull: false
         }        
 
     }, {
-        tableName: 'Kandang',
+        tableName: 'kandang',
         timestamps: true,
         freezeTableName: true
     });
